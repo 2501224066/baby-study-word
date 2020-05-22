@@ -45,7 +45,7 @@ class IndexController extends Controller
                 return $this->fail();
         }
 
-        $list = $model->paginate(10);
+        $list = $model->paginate(14);
 
         return $this->success(['list' => $list]);
     }
